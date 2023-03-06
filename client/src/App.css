@@ -1,0 +1,620 @@
+.active{
+    color: #121FEA;
+}
+
+*{
+    margin: 0rem;
+    padding: 0rem;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+/* NavBar Section Css Start */
+/* 
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left,#fff 90%,#c3f5ff 10%);
+} */
+
+
+
+.navSection{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to top,#fff 80%,#c3f5ff 20%);
+}
+
+.logo{
+    width: 60%;
+    color: #fff;
+    background-image: linear-gradient(#8d98e3 40%,#894fee 60%);
+    padding-left:100px;
+    box-sizing: border-box;
+}
+
+.logo h1{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    animation: lefttoright 2s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes lefttoright{
+    from{padding-left: 2.5rem;}
+    to{padding-right: 2.5rem;}
+}
+
+nav{
+    width: 60%;
+    display: flex;
+    justify-content:space-around;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform :  uppercase;
+    color: #888;
+    font-weight: 900;
+    font-size: 1.2rem;
+    position: relative;
+    letter-spacing: 0.2rem;
+}
+
+
+nav a:before{
+    content:"";
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    height: 0.2rem;
+    width:0%;
+    border-bottom: 0.2rem solid #4458dc;
+    transition: all 0.4s linear;
+}
+
+nav a:hover:before{
+    width: 100%;
+}
+
+.toggle{
+    width : 100%;
+    padding: 0.8rem 1.1rem;
+    background: #c3f5ff;
+    text-align: right;
+    box-sizing: border-box;
+    font-size: 1.9rem;
+    display: none;
+}
+
+
+
+/* NavBar Section Css End*/
+
+/* Home page main section Css Start */
+main{
+    height:80vh;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.rightside{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    background-color: yellow;
+}
+
+.rightside img{
+    max-width: 25rem;
+    height:25rem;
+}
+
+.leftside{
+    color: #000;
+    text-transform: uppercase;
+}
+
+.leftside h1{
+    font-size: 4.3rem;
+    margin-bottom: 4.5rem;
+    word-spacing: 0.4rem;
+    margin-left: 2.5rem;
+}
+
+.leftside p{
+    font-size: 2.1rem;
+    margin-top: 0.6rem;
+    margin-bottom: 1.9rem;
+    word-spacing: 0.3rem;
+    margin-left: 2.5rem;
+}
+
+.leftside a{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0.8rem 1.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 0.4rem;
+    display: inline-block;
+    margin-right: 3rem;
+    color: #fff;
+    letter-spacing: 0;
+    background-image: linear-gradient(to right,#4458dc 0%,#854fee 100%),radial-gradient(circle at top left,#4458dc,#854fee);
+    border: double 2px transparent;
+    box-shadow: 0 10px 30px rgba(118,85,225,.3);
+    margin-left : 280px;
+}
+
+.leftside a:hover{
+    border: 2px solid #4458dc;
+    color : #222;
+    background-color: #fff;
+    box-shadow: none;
+    background-image: none;
+}
+
+/* Home page main section Css End */
+
+/* User Registration and login css start */
+
+.signup{
+    display:flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.signup h1{
+    font-size: 100px;
+    font-weight:500 ;
+    padding-left : 20px ;
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    height: 75vh;
+    background: #fff;
+    padding: 35px 30px 45px;
+    border-radius: 5px;
+    border: 1px solid #efefef;
+    box-shadow: 
+    /* Top layer of Shadow */
+        0 1px 1px rgba(0,0,0,0.15),
+    /* Second Layer of box */
+        0 10px 0 -5px #eee,
+    /* Second Layer Of Shadow */
+        0 10px 1px -4px rgba(0,0,0,0.15),
+    /* Second Layer of box */
+        0 20px 0 -10px #eee,
+    /* Second Layer Of Shadow */
+        0 20px 1px -9px rgba(0,0,0,0.15);
+}
+
+.form-title{
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+
+.form-title:before{
+    content: "";
+    position: absolute;
+    left: center;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.register-form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 12px 0;
+}
+
+.register-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 12px 0;
+}
+
+.form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    width: calc(100% - 20px);
+}
+
+.form-group label{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.form-group input,.form-group select{
+    height: 28px;
+    width: 60%;
+    border-radius: 5px;
+    border: 2px solid #ccc ;
+    padding: 2px;
+    font-size: 18px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group input:valid{
+    border: #9b59b6;
+}
+
+#navlink{
+    height: 45px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+#signup{
+    width: 70%;
+    height: 55px;
+    margin-top: 20px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    padding: 5px;
+    font-size: 35px ;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-radius: 10%;
+}  
+
+#signup:hover{
+    border: 2px solid #4458dc;
+    color : #222;
+    background-color: #fff;
+    box-shadow: none;
+    background-image: none;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+#errormessage {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-size: 12px;
+    padding: 3px ;
+    color : red;
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+
+/* Display ErrorMessage css Start */
+.alert{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background: linear-gradient(135deg, #c79d81, #931c5b);
+    font-size: 20px;
+    padding: 10px ;
+    color : white;
+    border: 2px solid rgba(164, 38, 38, 0.71);
+}
+
+/* Display ErrorMessage css End */
+
+/* User Registration and login css End */
+
+/* Disabled Button component css start */
+
+.loadbtn{
+    width: 70%;
+    height: 55px;
+    margin-top: 20px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(135deg, #2f4403, #7c3a7d);
+    padding: 5px;
+    font-size: 35px ;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-radius: 10%;
+}
+
+
+/* Disabled Button component css End*/
+
+/* Profile Page css start */
+
+:root{
+    --navbar-width: 300px;
+    --color-light: #fff;
+}
+
+
+.profile-section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.profile-container{
+    display: flex;
+    box-shadow: 0px 0px 15px 3px black;
+}
+
+/* Left-side css Start */
+
+aside{
+    width: var(--navbar-width);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    box-shadow: 0px 0px 15px 3px black;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.user-logo{
+    height: 150px;
+    width: 150px;
+}
+
+#profile-image{
+    height: 100%;
+    width: 100%;
+    border: 1px double black;
+    border-radius: 50%;
+}
+
+.navbar nav,ul{
+    width: 100%;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+    padding: 15px 10px;
+    position: relative;
+    letter-spacing: 0px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    transform: translateY(0px);
+}
+
+li:hover{
+    letter-spacing: 1px;
+    transform: translateY(1px);
+    color: var(--color-light);
+    font-weight: 600;
+}
+
+li::before{
+    content: "";
+    background: red;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    z-index: -1;
+    transition: width 300ms ease-in-out;
+}
+
+li:hover::before{
+    width: 100%; 
+    
+}
+
+li button{
+    border: none;
+    background: none;
+    padding: 15px 10px;
+    font-size: 15px;
+    position: relative;
+    letter-spacing: 0px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    transform: translateY(0px);
+}
+
+li button:hover{
+    letter-spacing: 1px;
+    transform: translateY(1px);
+    color: var(--color-light);
+    font-weight: 600;
+}
+
+li:active{
+    letter-spacing: 1px;
+    transform: translateY(1px);
+    color: var(--color-light);
+    font-weight: 600;
+}
+
+/* Left-side css End */
+
+/* right-side css Start */
+.content-tabs {
+    flex-grow : 1;
+}
+.content {
+    height:500px;
+    width: calc(100vw - 500px);
+    padding: 10px;
+    display: none;
+}
+
+.content .title{
+    margin-left: 10px;
+    font-size: 2rem;
+    border-bottom: 5px solid #e0e0e0;
+    margin-bottom: 15px;
+    color: #353c4e;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title-filter{
+    font-size: 0.8rem;
+    
+    justify-content: right;
+}
+
+
+.content .contents{
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.content .contents #user-details,#user-details tr,#user-details td {
+    padding: 5px;
+    border: none;
+} 
+
+.active-content {
+    display: block;
+}
+
+.active-content li {
+    letter-spacing: 1px;
+    transform: translateY(1px);
+    color: var(--color-light);
+    font-weight: 600;
+}
+
+#editprofile{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+    text-align: center;
+    padding: 12px 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 0;
+    background-image: linear-gradient(to right,#4458dc 0%,#854fee 100%),radial-gradient(circle at top left,#4458dc,#854fee);
+    border: double 2px transparent;
+    box-shadow: 0 10px 30px rgba(118,85,225,.3);
+    margin: 20px 0px 0px 280px; 
+}
+
+#editprofile:hover{
+    border: 2px solid #4458dc;
+    color : #222;
+    background-color: #fff;
+    box-shadow: none;
+    background-image: none;
+}
+
+
+/* right-side css End */
+
+/* Profile Page css End */
+
+
+/* View Transaction css Start */
+
+#viewTran{
+    border-collapse: collapse;
+    font-size: 0.9em;
+    height:2rem;
+    width: calc(100vw - 34.3rem);
+    /* padding: 0.1rem; */
+    margin-left: 0.7rem;
+    margin-top: 0.7rem;
+}
+
+#viewTran thead tr{
+    background-color: #009879;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+
+#viewTran thead tr th,
+#viewTran tbody tr td 
+{
+    padding: 0.5rem 0.8rem;
+} 
+
+#viewTran tbody tr{
+    border-bottom: 0.01rem solid #6273b1; 
+    
+} 
+
+#viewTran tbody tr:last-of-type{
+    border-bottom: 0.3rem solid #009879; 
+    
+}
+
+.typeList Dropdown label{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .title-filter{
+    display: flex;  
+    flex-direction: row;
+    margin-left: 00.3rem;
+}
+
+.title-filter #label-title{
+    margin-right: 0.5rem;
+}
+
+.view-switch .list{
+    margin-right: 0.2rem;
+} */
+
+/* View Transaction css End */
+
+/* About us Page Css Start */
+
+.gmap_iframe{
+    width : 100%;
+    height : 37.5rem;
+}
+
+/* About us Page Css End */
+
+
+
+
